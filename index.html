@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaos Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Chaos Cards</h1>
+        <div id="corruption-meter">Corruption: 0</div>
+
+        <div id="ai-area">
+            <h2>Opponent (<span id="ai-card-count">0</span> cards)</h2>
+            <div id="ai-hand" class="hand"></div>
+        </div>
+
+        <div id="play-area">
+            <div id="deck" class="card-pile">Deck</div>
+            <div id="discard-pile" class="card-pile">Discard</div>
+        </div>
+
+        <div id="player-area">
+            <h2>Your Hand</h2>
+            <div id="player-hand" class="hand"></div>
+        </div>
+
+        <div id="message-log"></div>
+    </div>
+
+    <!-- Modal for Code Editor Card -->
+    <div id="code-editor-modal" class="hidden">
+        <div class="modal-content">
+            <h2 class="glitch-text">SYSTEM OVERRIDE</h2>
+            <p>Target Variable: <span id="target-var-name"></span></p>
+            <p>Current Value: <span id="target-var-value"></span></p>
+            <input type="text" id="new-var-value" placeholder="Enter new value">
+            <button id="submit-override">INJECT CODE</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
